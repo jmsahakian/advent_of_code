@@ -7,6 +7,7 @@ sweep_report <- sweep_report %>%
   mutate(previous_sweep = lag(sweep)) %>% 
   mutate(difference = sweep - previous_sweep) %>% 
   count(difference > 0)
+<<<<<<< HEAD
 #Part 2
 library(RcppRoll)
 sweep_report_2 <- read.table("2021/input.txt", col.names = c("depth"))
@@ -18,3 +19,5 @@ sweep_report_2 <- sweep_report_2 %>%
   #count to three and then sum
   #then count again to three beginning with the second value
   #then compare the sums
+=======
+>>>>>>> a086099610c9209bf4c32956021962ae03bf1515
